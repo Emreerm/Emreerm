@@ -1,8 +1,6 @@
 <h1 align="center">Hi 👋, I'm Emre</h1>
 <h3 align="center">I am a UI/UX Designer living in Turkey. My hobby is coding projects using AI.</h3>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=emreeerm" alt="emreeerm" /></a> </p>
-
 <p align="left"> <a href="https://twitter.com/emreeerm" target="blank"><img src="https://img.shields.io/twitter/follow/emreeerm?logo=twitter&style=for-the-badge" alt="emreeerm" /></a> </p>
 
 - 👨‍💻 All of my projects are available at [www.behance.net/emreerim](www.behance.net/emreerim)
