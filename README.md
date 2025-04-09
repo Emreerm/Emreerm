@@ -3,7 +3,7 @@
 
 <p align="left"> <a href="https://twitter.com/emreeerm" target="blank"><img src="https://img.shields.io/twitter/follow/emreeerm?logo=twitter&style=for-the-badge" alt="emreeerm" /></a> </p>
 
-- 👨‍💻 All of my projects are available at [www.behance.net/emreerim](www.behance.net/emreerim)
+- 👨‍💻 All of my projects are available at [www.behance.net/emreerim](https://www.behance.net/emreerim)
 
 - 📫 How to reach me **emre.uiux@gmail.com**
 
