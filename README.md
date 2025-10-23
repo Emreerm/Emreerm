@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Emre</h1>
-<h3 align="center">I am a UI/UX Designer living in Turkey. My hobby is coding projects using AI.</h3>
+<h3 align="center">I am a UI/UX Designer living in Turkey. Vibe Coder, Digital Nomad, Figure Maker.</h3>
 
 ## 🌐 Socials:
 <p align="left"> <a href="https://twitter.com/emreeerm" target="blank"><img src="https://img.shields.io/twitter/follow/emreeerm?logo=twitter&style=for-the-badge" alt="emreeerm" /></a> </p>
