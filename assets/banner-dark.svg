@@ -1,118 +1,181 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 560" role="img" aria-labelledby="bannerTitle bannerDesc" preserveAspectRatio="xMidYMid meet">
-  <title id="bannerTitle">Emre Erim — Designer, Developer, Vinyl Toy Maker</title>
-  <desc id="bannerDesc">Editorial brutalist profile banner with animated marquee ticker, hand-written in SVG.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 520" role="img" aria-labelledby="heroTitle heroDesc" preserveAspectRatio="xMidYMid meet">
+  <title id="heroTitle">SYS.EMRE.ERIM — Designer / Coder / Vinyl Toy Engineer</title>
+  <desc id="heroDesc">Cyberpunk HUD banner with chromatic aberration title, boot log terminal, scan lines, and animated status indicators.</desc>
 
   <defs>
-    <filter id="paperGrain" x="0" y="0" width="100%" height="100%">
-      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7"/>
-      <feColorMatrix values="0 0 0 0 0.96
-                             0 0 0 0 0.95
-                             0 0 0 0 0.92
-                             0 0 0 0.06 0"/>
-      <feComposite in2="SourceGraphic" operator="in"/>
-    </filter>
-
-    <pattern id="dots" x="0" y="0" width="14" height="14" patternUnits="userSpaceOnUse">
-      <circle cx="1" cy="1" r="0.8" fill="#F5F2EC" opacity="0.08"/>
+    <!-- Background grid -->
+    <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 L 0 40" fill="none" stroke="#00F0FF" stroke-width="0.5" opacity="0.14"/>
     </pattern>
 
-    <clipPath id="stageClip">
-      <rect width="1600" height="560"/>
+    <!-- CRT scan lines -->
+    <pattern id="scanlines" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="4" height="1" fill="#E4E8F7" opacity="0.04"/>
+    </pattern>
+
+    <!-- Glow filter -->
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Vignette -->
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="55%" stop-color="#0B0D17" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000308" stop-opacity="0.9"/>
+    </radialGradient>
+
+    <!-- Noise -->
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="3"/>
+      <feColorMatrix values="0 0 0 0 0
+                             0 0 0 0 0.94
+                             0 0 0 0 1
+                             0 0 0 0.03 0"/>
+    </filter>
+
+    <clipPath id="stage">
+      <rect width="1600" height="520"/>
     </clipPath>
 
-    <clipPath id="marqueeClip">
-      <rect x="0" y="0" width="1600" height="44"/>
+    <clipPath id="logPanel">
+      <rect x="0" y="0" width="540" height="340"/>
     </clipPath>
 
     <style>
-      .display-bold { font-family: 'Fraunces', 'Playfair Display', 'Didot', 'Bodoni 72', Georgia, serif; font-weight: 900; }
-      .display-italic { font-family: 'Instrument Serif', 'Playfair Display', Georgia, serif; font-weight: 400; font-style: italic; }
-      .mono { font-family: 'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, monospace; font-weight: 500; letter-spacing: 0.08em; }
-      .mono-bold { font-family: 'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, monospace; font-weight: 700; letter-spacing: 0.12em; }
-      .italic { font-family: 'Instrument Serif', 'Playfair Display', Georgia, serif; font-style: italic; font-weight: 400; }
+      .display { font-family: 'JetBrains Mono', 'Space Mono', 'IBM Plex Mono', 'SF Mono', ui-monospace, Menlo, monospace; font-weight: 800; letter-spacing: -0.02em; }
+      .mono { font-family: 'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, monospace; font-weight: 500; letter-spacing: 0.04em; }
+      .mono-bold { font-family: 'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, monospace; font-weight: 700; letter-spacing: 0.08em; }
     </style>
   </defs>
 
-  <g clip-path="url(#stageClip)">
-    <rect width="1600" height="560" fill="#0A0A0A"/>
-    <rect width="1600" height="560" fill="url(#dots)"/>
-    <rect width="1600" height="560" fill="#F5F2EC" filter="url(#paperGrain)" opacity="0.4"/>
+  <g clip-path="url(#stage)">
+    <!-- Base -->
+    <rect width="1600" height="520" fill="#0B0D17"/>
+    <rect width="1600" height="520" fill="url(#grid)"/>
+    <rect width="1600" height="520" fill="url(#scanlines)"/>
+    <rect width="1600" height="520" filter="url(#noise)" opacity="0.5"/>
+    <rect width="1600" height="520" fill="url(#vignette)"/>
 
-    <!-- Top rule -->
-    <line x1="64" y1="42" x2="1536" y2="42" stroke="#2A2A2A" stroke-width="1"/>
-    <line x1="64" y1="42" x2="64" y2="42" stroke="#FF2C2C" stroke-width="3">
-      <animate attributeName="x2" from="64" to="260" dur="1.2s" fill="freeze" begin="0.2s"/>
-    </line>
+    <!-- Scanning cyan beam -->
+    <rect x="0" width="1600" height="2" fill="#00F0FF" opacity="0.35">
+      <animate attributeName="y" from="-4" to="520" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.4;0.4;0" keyTimes="0;0.1;0.9;1" dur="6s" repeatCount="indefinite"/>
+    </rect>
 
-    <!-- Top-left meta -->
-    <text x="64" y="76" class="mono" font-size="11" fill="#8A8A8A">N° 001  /  PROFILE.V2  /  EST. 2019</text>
-    <text x="64" y="94" class="mono" font-size="11" fill="#8A8A8A">ERIM.DEV  ·  ISTANBUL, TR</text>
+    <!-- Corner brackets -->
+    <g stroke="#00F0FF" stroke-width="2" fill="none" opacity="0.85">
+      <path d="M 28 28 L 28 68 M 28 28 L 68 28"/>
+      <path d="M 1572 28 L 1572 68 M 1572 28 L 1532 28"/>
+      <path d="M 28 492 L 28 452 M 28 492 L 68 492"/>
+      <path d="M 1572 492 L 1572 452 M 1572 492 L 1532 492"/>
+    </g>
 
-    <!-- Top-right: LIVE indicator -->
-    <g>
-      <circle cx="1430" cy="70" r="4" fill="#FF2C2C">
-        <animate attributeName="opacity" values="1;0.25;1" dur="1.6s" repeatCount="indefinite"/>
+    <!-- Top HUD strip -->
+    <g transform="translate(100, 58)">
+      <line x1="0" y1="0" x2="1400" y2="0" stroke="#1F2840" stroke-width="1"/>
+      <line x1="0" y1="0" x2="160" y2="0" stroke="#00F0FF" stroke-width="2"/>
+      <text y="-10" class="mono-bold" font-size="11" fill="#00F0FF">[ SYS.EMRE.ERIM ]</text>
+      <text x="180" y="-10" class="mono" font-size="11" fill="#4A5578">v2.0 ⟡ NODE IST-01 ⟡ UPTIME 07Y ⟡ LAT 41.01°N LON 28.97°E</text>
+      <circle cx="1370" cy="-14" r="4" fill="#B8FF00" filter="url(#glow)">
+        <animate attributeName="opacity" values="1;0.25;1" dur="1.2s" repeatCount="indefinite"/>
       </circle>
-      <text x="1444" y="74" class="mono-bold" font-size="11" fill="#F5F2EC">LIVE  ·  2026.04</text>
+      <text x="1385" y="-10" class="mono-bold" font-size="11" fill="#B8FF00">ONLINE</text>
     </g>
 
-    <!-- Vertical right rail with rotated text -->
-    <line x1="1494" y1="140" x2="1494" y2="440" stroke="#FF2C2C" stroke-width="2"/>
-    <text transform="rotate(90, 1522, 180)" x="1522" y="180" class="mono-bold" font-size="11" fill="#F5F2EC">INDEX / PROFILE / N° 001 / 2026</text>
-
-    <!-- MASSIVE DISPLAY TYPE: EMRE (solid) + ERIM (outline italic) -->
-    <g transform="translate(64, 260)">
-      <text class="display-bold" font-size="220" fill="#F5F2EC" letter-spacing="-6">EMRE</text>
-      <!-- ERIM: low-opacity fill behind -->
-      <text y="180" class="display-italic" font-size="220" fill="#FF2C2C" letter-spacing="-6" opacity="0.08">ERIM</text>
-      <!-- ERIM: outline on top -->
-      <text y="180" class="display-italic" font-size="220" fill="none" stroke="#FF2C2C" stroke-width="2" letter-spacing="-6">ERIM</text>
-    </g>
-
-    <!-- Right-side editorial tagline -->
-    <g transform="translate(1100, 220)">
-      <text class="mono-bold" font-size="11" fill="#FF2C2C">— FILE.01</text>
-      <text y="34" class="italic" font-size="30" fill="#F5F2EC">Designer,</text>
-      <text y="70" class="italic" font-size="30" fill="#F5F2EC">developer,</text>
-      <text y="106" class="italic" font-size="30" fill="#F5F2EC">figure maker.</text>
-      <line x1="0" y1="128" x2="240" y2="128" stroke="#FF2C2C" stroke-width="1"/>
-      <text y="150" class="mono" font-size="10" fill="#8A8A8A">A three-handed practice</text>
-      <text y="166" class="mono" font-size="10" fill="#8A8A8A">from Istanbul, Turkey.</text>
-    </g>
-
-    <!-- Decorative rotating dial -->
-    <g transform="translate(1400, 260)" opacity="0.9">
-      <circle cx="40" cy="40" r="40" fill="none" stroke="#FF2C2C" stroke-width="1.5"/>
-      <circle cx="40" cy="40" r="28" fill="none" stroke="#FF2C2C" stroke-width="1"/>
-      <circle cx="40" cy="40" r="4" fill="#FF2C2C"/>
+    <!-- MASSIVE DISPLAY with chromatic aberration -->
+    <g transform="translate(100, 200)">
+      <!-- Magenta layer (offset right) -->
       <g>
-        <line x1="40" y1="8" x2="40" y2="16" stroke="#FF2C2C" stroke-width="1.5"/>
-        <line x1="40" y1="64" x2="40" y2="72" stroke="#FF2C2C" stroke-width="1.5"/>
-        <line x1="8" y1="40" x2="16" y2="40" stroke="#FF2C2C" stroke-width="1.5"/>
-        <line x1="64" y1="40" x2="72" y2="40" stroke="#FF2C2C" stroke-width="1.5"/>
-        <animateTransform attributeName="transform" type="rotate" from="0 40 40" to="360 40 40" dur="24s" repeatCount="indefinite"/>
+        <text x="4" class="display" font-size="148" fill="#FF006E" opacity="0.85">EMRE</text>
+        <text x="4" y="130" class="display" font-size="148" fill="#FF006E" opacity="0.85">ERIM</text>
+        <animate attributeName="opacity" values="1;0.9;1;1;0.7;1;1" dur="4s" repeatCount="indefinite"/>
       </g>
-      <text x="40" y="98" class="mono-bold" font-size="9" fill="#F5F2EC" text-anchor="middle">ERIM.DEV</text>
+      <!-- Cyan layer (offset left) -->
+      <g>
+        <text x="-4" class="display" font-size="148" fill="#00F0FF" opacity="0.85">EMRE</text>
+        <text x="-4" y="130" class="display" font-size="148" fill="#00F0FF" opacity="0.85">ERIM</text>
+        <animate attributeName="opacity" values="1;1;0.8;1;1;1;0.9" dur="4s" repeatCount="indefinite"/>
+      </g>
+      <!-- White main -->
+      <text class="display" font-size="148" fill="#E4E8F7">EMRE</text>
+      <text y="130" class="display" font-size="148" fill="#E4E8F7">ERIM</text>
+      <!-- Glitch slice (occasional horizontal cut) -->
+      <rect x="0" y="88" width="550" height="6" fill="#0B0D17">
+        <animate attributeName="opacity" values="0;0;0;1;0;0;0;0;1;0" dur="7s" repeatCount="indefinite"/>
+        <animate attributeName="x" values="0;60;0;-40;0" dur="7s" repeatCount="indefinite"/>
+      </rect>
     </g>
 
-    <!-- Bottom crimson band with marquee -->
-    <g transform="translate(0, 480)">
-      <rect width="1600" height="44" fill="#FF2C2C"/>
-      <g clip-path="url(#marqueeClip)">
-        <text x="0" y="30" class="mono-bold" font-size="16" fill="#0A0A0A" letter-spacing="0.22em">
-          <animate attributeName="x" from="0" to="-1600" dur="30s" repeatCount="indefinite"/>
-          UI/UX DESIGNER  ★  VIBE CODER  ★  VINYL TOY MAKER  ★  DIGITAL NOMAD  ★  UI/UX DESIGNER  ★  VIBE CODER  ★  VINYL TOY MAKER  ★  DIGITAL NOMAD  ★  UI/UX DESIGNER  ★  VIBE CODER  ★  VINYL TOY MAKER  ★  DIGITAL NOMAD  ★
-        </text>
-        <text x="1600" y="30" class="mono-bold" font-size="16" fill="#0A0A0A" letter-spacing="0.22em">
-          <animate attributeName="x" from="1600" to="0" dur="30s" repeatCount="indefinite"/>
-          UI/UX DESIGNER  ★  VIBE CODER  ★  VINYL TOY MAKER  ★  DIGITAL NOMAD  ★  UI/UX DESIGNER  ★  VIBE CODER  ★  VINYL TOY MAKER  ★  DIGITAL NOMAD  ★  UI/UX DESIGNER  ★  VIBE CODER  ★  VINYL TOY MAKER  ★  DIGITAL NOMAD  ★
-        </text>
+    <!-- Subtitle row -->
+    <g transform="translate(100, 400)">
+      <rect x="-24" y="-16" width="4" height="30" fill="#FF006E"/>
+      <text class="mono-bold" font-size="14" fill="#E4E8F7">// UI/UX DESIGNER</text>
+      <text x="234" class="mono-bold" font-size="14" fill="#00F0FF">// VIBE CODER</text>
+      <text x="420" class="mono-bold" font-size="14" fill="#B8FF00">// VINYL.TOY.ENGINEER</text>
+    </g>
+
+    <!-- RIGHT PANEL: TERMINAL BOOT LOG -->
+    <g transform="translate(1000, 100)">
+      <!-- Panel frame -->
+      <rect x="0" y="0" width="500" height="340" fill="#0B0D17" stroke="#00F0FF" stroke-width="1" opacity="1"/>
+      <rect x="0" y="0" width="500" height="28" fill="#00F0FF" opacity="0.12"/>
+      <rect x="0" y="0" width="500" height="340" fill="none" stroke="#00F0FF" stroke-width="1"/>
+      <!-- Panel title bar -->
+      <circle cx="14" cy="14" r="3.5" fill="#FF006E"/>
+      <circle cx="26" cy="14" r="3.5" fill="#FFB800"/>
+      <circle cx="38" cy="14" r="3.5" fill="#B8FF00"/>
+      <text x="60" y="18" class="mono-bold" font-size="10" fill="#00F0FF">▸ term.sh — /root/init_profile</text>
+      <text x="488" y="18" class="mono" font-size="10" fill="#4A5578" text-anchor="end">2026.04.23</text>
+
+      <g transform="translate(18, 56)" clip-path="url(#logPanel)">
+        <text class="mono" font-size="12" fill="#B8FF00">$ ./init_profile.sh --mode=cyberpunk</text>
+        <text y="22" class="mono" font-size="12" fill="#4A5578"># booting personal system...</text>
+
+        <text y="52" class="mono" font-size="12" fill="#E4E8F7">&gt; loading  designer.module</text>
+        <text y="52" x="340" class="mono-bold" font-size="12" fill="#B8FF00">[ OK ]</text>
+
+        <text y="74" class="mono" font-size="12" fill="#E4E8F7">&gt; loading  coder.module</text>
+        <text y="74" x="340" class="mono-bold" font-size="12" fill="#B8FF00">[ OK ]</text>
+
+        <text y="96" class="mono" font-size="12" fill="#E4E8F7">&gt; loading  toymaker.module</text>
+        <text y="96" x="340" class="mono-bold" font-size="12" fill="#B8FF00">[ OK ]</text>
+
+        <text y="118" class="mono" font-size="12" fill="#E4E8F7">&gt; mounting /erim.dev</text>
+        <text y="118" x="340" class="mono-bold" font-size="12" fill="#FFB800">[ ACTIVE ]</text>
+
+        <text y="140" class="mono" font-size="12" fill="#E4E8F7">&gt; init     aesthetic.brain</text>
+        <text y="140" x="340" class="mono-bold" font-size="12" fill="#FF006E">[ SPICY ]</text>
+
+        <text y="170" class="mono" font-size="12" fill="#4A5578"># system ready. stdin open.</text>
+
+        <text y="208" class="mono" font-size="12" fill="#00F0FF">$ whoami</text>
+        <text y="230" class="mono" font-size="12" fill="#E4E8F7">emre@erim.dev — ist.tr</text>
+
+        <g transform="translate(0, 258)">
+          <text class="mono" font-size="12" fill="#00F0FF">$ </text>
+          <rect x="14" y="-12" width="8" height="15" fill="#00F0FF">
+            <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.45;0.5;1" dur="1s" repeatCount="indefinite"/>
+          </rect>
+        </g>
       </g>
     </g>
 
-    <!-- Bottom meta rule -->
-    <line x1="64" y1="540" x2="1536" y2="540" stroke="#2A2A2A" stroke-width="1"/>
-    <text x="64" y="556" class="mono" font-size="10" fill="#6B6B6B">↘  SCROLL  ·  01.HERO  ·  PAGE 1/5</text>
-    <text x="1536" y="556" class="mono" font-size="10" fill="#6B6B6B" text-anchor="end">HAND-WRITTEN IN SVG  ·  NO BADGE FARM</text>
+    <!-- Bottom meta strip -->
+    <g transform="translate(100, 458)">
+      <line x1="0" y1="0" x2="1400" y2="0" stroke="#1F2840" stroke-width="1"/>
+      <line x1="0" y1="0" x2="160" y2="0" stroke="#FF006E" stroke-width="2"/>
+      <text y="20" class="mono" font-size="10" fill="#4A5578">◢ END.HEADER ⟡ SCROLL FOR PAYLOAD ⟡ PRESS ANY KEY ⟡ README.MD v2.0</text>
+      <text x="1400" y="20" class="mono-bold" font-size="10" fill="#FF006E" text-anchor="end">EST 2019 ⟡ TR</text>
+    </g>
+
+    <!-- Edge decorative: left vertical ID bar -->
+    <g transform="translate(58, 170)">
+      <line x1="0" y1="0" x2="0" y2="240" stroke="#FF006E" stroke-width="1"/>
+      <text transform="rotate(-90, 0, 0) translate(-240, -8)" class="mono-bold" font-size="10" fill="#FF006E">ID 0x001 ⟡ PROFILE.V2 ⟡ ONLINE</text>
+    </g>
   </g>
 </svg>
