@@ -1,33 +1,201 @@
-<h1 align="center">Hi 👋, I'm Emre</h1>
-<h3 align="center">I am a UI/UX Designer living in Turkey. Vibe Coder, Digital Nomad, Figure Maker.</h3>
+<!--
+  EMRE ERIM — github profile
+  editorial brutalist layout · hand-written in svg + markdown
+  no templates · no badge farm · no random dev quote
+-->
 
-## 🌐 Socials:
-<p align="left"> <a href="https://twitter.com/emreeerm" target="blank"><img src="https://img.shields.io/twitter/follow/emreeerm?logo=twitter&style=for-the-badge" alt="emreeerm" /></a> </p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
+  <img alt="Emre Erim — Designer, Developer, Vinyl Toy Maker" src="assets/banner-dark.svg" width="100%">
+</picture>
 
-- 👨‍💻 All of my projects are available at [www.behance.net/emreerim](https://www.behance.net/emreerim)
+&nbsp;
 
-- 📫 How to reach me **emre.uiux@gmail.com**
+<table>
+<tr>
+<td valign="top" width="150">
+  <img src="assets/dropcap-D.svg" width="130" alt="D">
+</td>
+<td valign="top">
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://twitter.com/emreeerm" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="emreeerm" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/emreeerm" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="emreeerm" height="30" width="40" /></a>
-<a href="https://instagram.com/emreeerm" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="emreeerm" height="30" width="40" /></a>
-<a href="https://www.behance.net/emreerim" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg" alt="emreerim" height="30" width="40" /></a>
+&nbsp;
+
+**esigner-developer hybrid from Istanbul.** I build interfaces at [**Erim.dev**](https://eerim.dev) and make vinyl toys on the side. My work sits between pixel precision and 3D figure craft — two hands, one eye, one very loud espresso machine.
+
+No _"Hi 👋 I'm Emre"_. No shields farm. No random dev quote. Just work.
+
+</td>
+</tr>
+</table>
+
+&nbsp;
+
+<img src="assets/divider.svg" width="100%" alt="—">
+
+&nbsp;
+
+### `/01 — NOW`
+
+```txt
+   last commit to this page   2026.04.22
+   ────────────────────────────────────────────────────
+
+   ▸  building     erim.dev v3 — personal studio site
+   ▸  designing    a product identity for a skincare label
+   ▸  making       vinyl toy series — SKU-04 prototype
+   ▸  reading      refactoring ui (adam wathan)
+   ▸  listening    arca · fred again.. · caribou
+```
+
+&nbsp;
+
+<img src="assets/divider.svg" width="100%" alt="—">
+
+&nbsp;
+
+### `/02 — STACK`
+
+```txt
+   DESIGN      figma       framer        blender       adobe cc
+               sketch      illustrator   photoshop     lightroom
+
+   CODE        typescript  next.js       node          tailwind
+               html5       css3          javascript
+
+   MAKING      blender     after fx      resin cast    photography
+
+   DATA        postgres    mongodb       mssql         supabase
+```
+
+> The tool is only the pen — the hand is what makes the mark.
+
+&nbsp;
+
+<img src="assets/divider.svg" width="100%" alt="—">
+
+&nbsp;
+
+### `/03 — SELECTED WORKS`
+
+<table>
+<tr>
+<td valign="top" width="80">
+<sub><code>2025</code></sub>
+</td>
+<td valign="top" width="40" align="center">
+<sub>█</sub>
+</td>
+<td valign="top">
+<strong>N° 04 &nbsp;—&nbsp; Product Identity</strong><br>
+<sub>UI/UX · web · brand system &nbsp;·&nbsp; <a href="https://www.behance.net/emreerim">behance ↗</a></sub>
+</td>
+</tr>
+<tr>
+<td valign="top" width="80">
+<sub><code>2024</code></sub>
+</td>
+<td valign="top" width="40" align="center">
+<sub>█</sub>
+</td>
+<td valign="top">
+<strong>N° 03 &nbsp;—&nbsp; Motion Study</strong><br>
+<sub>motion · 3D · after effects &nbsp;·&nbsp; <a href="https://www.behance.net/emreerim">behance ↗</a></sub>
+</td>
+</tr>
+<tr>
+<td valign="top" width="80">
+<sub><code>2024</code></sub>
+</td>
+<td valign="top" width="40" align="center">
+<sub>█</sub>
+</td>
+<td valign="top">
+<strong>N° 02 &nbsp;—&nbsp; Dashboard System</strong><br>
+<sub>UI/UX · design system · figma &nbsp;·&nbsp; <a href="https://www.behance.net/emreerim">behance ↗</a></sub>
+</td>
+</tr>
+<tr>
+<td valign="top" width="80">
+<sub><code>2023</code></sub>
+</td>
+<td valign="top" width="40" align="center">
+<sub>█</sub>
+</td>
+<td valign="top">
+<strong>N° 01 &nbsp;—&nbsp; SKU-01 Toy Series</strong><br>
+<sub>object · resin cast · photography &nbsp;·&nbsp; <a href="https://www.behance.net/emreerim">behance ↗</a></sub>
+</td>
+</tr>
+</table>
+
+<sub>→ Full index at &nbsp;<a href="https://www.behance.net/emreerim"><strong>behance.net/emreerim</strong></a></sub>
+
+&nbsp;
+
+<img src="assets/divider.svg" width="100%" alt="—">
+
+&nbsp;
+
+### `/04 — METRICS`
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=Emreerm&show_icons=true&hide_border=true&bg_color=0A0A0A&title_color=FF2C2C&icon_color=FF2C2C&text_color=F5F2EC&custom_title=SYSTEM+OUTPUT&include_all_commits=true&count_private=true&rank_icon=percentile">
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=Emreerm&show_icons=true&hide_border=true&bg_color=F5F2EC&title_color=FF2C2C&icon_color=FF2C2C&text_color=0A0A0A&custom_title=SYSTEM+OUTPUT&include_all_commits=true&count_private=true&rank_icon=percentile">
+  <img alt="Emreerm — GitHub metrics" src="https://github-readme-stats.vercel.app/api?username=Emreerm&show_icons=true&hide_border=true&bg_color=0A0A0A&title_color=FF2C2C&icon_color=FF2C2C&text_color=F5F2EC&custom_title=SYSTEM+OUTPUT&include_all_commits=true&count_private=true&rank_icon=percentile" width="100%">
+</picture>
+
+&nbsp;
+
+<img src="assets/divider.svg" width="100%" alt="—">
+
+&nbsp;
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cta-lets-work-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/cta-lets-work-light.svg">
+  <img alt="Let's Work — contact" src="assets/cta-lets-work-dark.svg" width="100%">
+</picture>
+
+&nbsp;
+
+```txt
+   ↗  mail        emre.uiux@gmail.com
+   ↗  work        behance.net/emreerim
+   ↗  writing     eerim.dev
+   ↗  linkedin    linkedin.com/in/emreeerm
+   ↗  twitter     twitter.com/emreeerm
+   ↗  instagram   instagram.com/emreeerm
+```
+
+<p align="center">
+<a href="mailto:emre.uiux@gmail.com"><strong>&nbsp;✉&nbsp;&nbsp;mail&nbsp;</strong></a>
+&nbsp;·&nbsp;
+<a href="https://www.behance.net/emreerim"><strong>&nbsp;◇&nbsp;&nbsp;behance&nbsp;</strong></a>
+&nbsp;·&nbsp;
+<a href="https://eerim.dev"><strong>&nbsp;◉&nbsp;&nbsp;erim.dev&nbsp;</strong></a>
+&nbsp;·&nbsp;
+<a href="https://linkedin.com/in/emreeerm"><strong>&nbsp;in&nbsp;&nbsp;linkedin&nbsp;</strong></a>
+&nbsp;·&nbsp;
+<a href="https://twitter.com/emreeerm"><strong>&nbsp;↗&nbsp;&nbsp;twitter&nbsp;</strong></a>
+&nbsp;·&nbsp;
+<a href="https://instagram.com/emreeerm"><strong>&nbsp;◎&nbsp;&nbsp;instagram&nbsp;</strong></a>
 </p>
 
+&nbsp;
 
-# 💻 Tech Stack:
-![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Ant-Design](https://img.shields.io/badge/-AntDesign-%230170FE?style=for-the-badge&logo=ant-design&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![MicrosoftSQLServer](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white) ![Adobe](https://img.shields.io/badge/adobe-%23FF0000.svg?style=for-the-badge&logo=adobe&logoColor=white) ![Adobe After Effects](https://img.shields.io/badge/Adobe%20After%20Effects-9999FF.svg?style=for-the-badge&logo=Adobe%20After%20Effects&logoColor=white) ![Framer](https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue) ![Adobe Illustrator](https://img.shields.io/badge/adobe%20illustrator-%23FF9A00.svg?style=for-the-badge&logo=adobe%20illustrator&logoColor=white) ![Adobe Lightroom](https://img.shields.io/badge/Adobe%20Lightroom-31A8FF.svg?style=for-the-badge&logo=Adobe%20Lightroom&logoColor=white) ![Adobe Lightroom Classic](https://img.shields.io/badge/Adobe%20Lightroom%20Classic-31A8FF.svg?style=for-the-badge&logo=Adobe%20Lightroom%20Classic&logoColor=white) ![Adobe Photoshop](https://img.shields.io/badge/adobe%20photoshop-%2331A8FF.svg?style=for-the-badge&logo=adobe%20photoshop&logoColor=white) ![Adobe XD](https://img.shields.io/badge/Adobe%20XD-470137?style=for-the-badge&logo=Adobe%20XD&logoColor=#FF61F6) ![Blender](https://img.shields.io/badge/blender-%23F5792A.svg?style=for-the-badge&logo=blender&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white) ![Sketch](https://img.shields.io/badge/Sketch-FFB387?style=for-the-badge&logo=sketch&logoColor=black) ![Dribbble](https://img.shields.io/badge/Dribbble-EA4C89?style=for-the-badge&logo=dribbble&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=Emreerm&theme=dark&hide_border=false&include_all_commits=false&count_private=true)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=Emreerm&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=Emreerm&theme=dark&hide_border=false&include_all_commits=false&count_private=true&layout=compact)
+&nbsp;
 
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/signature-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/signature-light.svg">
+  <img alt="EE · ERIM.DEV · ISTANBUL · N° 001" src="assets/signature-dark.svg" width="100%">
+</picture>
 
----
-[![](https://visitcount.itsvg.in/api?id=Emreerm&icon=0&color=0)](https://visitcount.itsvg.in)
-
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+<!--
+  colophon
+  ──────────────────────────────────────────────────
+  set in Fraunces (display) & JetBrains Mono (meta).
+  hand-written in svg + markdown by ee.
+  no random quote widget. no visit counter. no gprm.
+-->

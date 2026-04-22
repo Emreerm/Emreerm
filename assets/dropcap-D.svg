@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 200" role="img" aria-label="Editorial dropcap D">
+  <defs>
+    <style>
+      .display { font-family: 'Fraunces', 'Playfair Display', 'Didot', Georgia, serif; font-weight: 900; }
+      .mono { font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace; }
+    </style>
+  </defs>
+
+  <!-- Frame (dark theme) -->
+  <g class="gh-dark">
+    <rect width="160" height="200" fill="none"/>
+    <rect x="2" y="2" width="156" height="196" fill="none" stroke="#FF2C2C" stroke-width="2"/>
+    <text x="80" y="160" class="display" font-size="200" fill="#FF2C2C" text-anchor="middle">D</text>
+    <text x="8" y="14" class="mono" font-size="8" fill="#FF2C2C">§ 1</text>
+    <text x="152" y="194" class="mono" font-size="8" fill="#FF2C2C" text-anchor="end">§</text>
+  </g>
+</svg>

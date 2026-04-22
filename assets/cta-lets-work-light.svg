@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 380" role="img" aria-labelledby="ctaTitle">
+  <title id="ctaTitle">Let's Work — Contact CTA</title>
+
+  <defs>
+    <style>
+      .display-bold { font-family: 'Fraunces', 'Playfair Display', 'Didot', Georgia, serif; font-weight: 900; }
+      .display-italic { font-family: 'Instrument Serif', 'Playfair Display', Georgia, serif; font-weight: 400; font-style: italic; }
+      .mono { font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace; font-weight: 500; letter-spacing: 0.12em; }
+      .mono-bold { font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace; font-weight: 700; letter-spacing: 0.16em; }
+    </style>
+  </defs>
+
+  <rect width="1400" height="380" fill="#F5F2EC"/>
+
+  <line x1="40" y1="28" x2="1360" y2="28" stroke="#D4D0C4" stroke-width="1"/>
+  <line x1="40" y1="28" x2="200" y2="28" stroke="#FF2C2C" stroke-width="3"/>
+  <text x="40" y="60" class="mono-bold" font-size="11" fill="#FF2C2C">/05 — CHANNELS</text>
+  <text x="1360" y="60" class="mono" font-size="11" fill="#6B6B6B" text-anchor="end">OPEN FOR WORK · 2026</text>
+
+  <g transform="translate(40, 180)">
+    <text class="display-bold" font-size="170" fill="#0A0A0A" letter-spacing="-4">LET'S</text>
+    <text x="420" class="display-italic" font-size="170" fill="none" stroke="#FF2C2C" stroke-width="2" letter-spacing="-4">WORK.</text>
+    <text x="420" class="display-italic" font-size="170" fill="#FF2C2C" letter-spacing="-4" opacity="0.14">WORK.</text>
+  </g>
+
+  <g transform="translate(1200, 120)">
+    <line x1="0" y1="80" x2="120" y2="80" stroke="#FF2C2C" stroke-width="2"/>
+    <polyline points="90,60 120,80 90,100" stroke="#FF2C2C" stroke-width="2" fill="none"/>
+    <text x="0" y="140" class="mono" font-size="10" fill="#6B6B6B">scroll to links below ↓</text>
+  </g>
+
+  <line x1="40" y1="340" x2="1360" y2="340" stroke="#D4D0C4" stroke-width="1"/>
+  <text x="40" y="362" class="mono" font-size="10" fill="#6B6B6B">↘  mail.behance.linkedin.twitter.instagram  ·  response within 48h</text>
+  <text x="1360" y="362" class="mono" font-size="10" fill="#6B6B6B" text-anchor="end">emre.uiux@gmail.com</text>
+</svg>
