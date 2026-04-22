@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 340" role="img" aria-labelledby="ctaTitle">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 520" role="img" aria-labelledby="ctaTitle">
   <title id="ctaTitle">CONNECT.INITIATE — Contact</title>
 
   <defs>
     <pattern id="gridCta" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 L 0 40" fill="none" stroke="#00F0FF" stroke-width="0.5" opacity="0.12"/>
+      <path d="M 40 0 L 0 0 L 0 40" fill="none" stroke="#00F0FF" stroke-width="0.5" opacity="0.10"/>
     </pattern>
     <pattern id="scanCta" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
-      <rect x="0" y="0" width="4" height="1" fill="#E4E8F7" opacity="0.04"/>
+      <rect x="0" y="0" width="4" height="1" fill="#E4E8F7" opacity="0.03"/>
     </pattern>
     <filter id="glowCta" x="-30%" y="-30%" width="160%" height="160%">
       <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
@@ -15,84 +15,108 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
+    <radialGradient id="vignetteCta" cx="50%" cy="50%" r="70%">
+      <stop offset="55%" stop-color="#0d1117" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000308" stop-opacity="0.75"/>
+    </radialGradient>
     <style>
       .display { font-family: 'JetBrains Mono', 'Space Mono', 'IBM Plex Mono', 'SF Mono', ui-monospace, Menlo, monospace; font-weight: 800; letter-spacing: -0.02em; }
-      .mono { font-family: 'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, monospace; font-weight: 500; letter-spacing: 0.06em; }
+      .mono { font-family: 'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, monospace; font-weight: 500; letter-spacing: 0.05em; }
       .mono-bold { font-family: 'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, monospace; font-weight: 700; letter-spacing: 0.12em; }
     </style>
   </defs>
 
-  <rect width="1600" height="340" fill="#0B0D17"/>
-  <rect width="1600" height="340" fill="url(#gridCta)"/>
-  <rect width="1600" height="340" fill="url(#scanCta)"/>
+  <rect width="1600" height="520" fill="#0d1117"/>
+  <rect width="1600" height="520" fill="url(#gridCta)"/>
+  <rect width="1600" height="520" fill="url(#scanCta)"/>
+  <rect width="1600" height="520" fill="url(#vignetteCta)"/>
 
   <!-- Scanning beam -->
-  <rect x="0" width="1600" height="2" fill="#FF006E" opacity="0.3">
-    <animate attributeName="y" from="-4" to="340" dur="5s" repeatCount="indefinite"/>
+  <rect x="0" width="1600" height="2" fill="#FF006E" opacity="0.35">
+    <animate attributeName="y" from="-4" to="520" dur="5s" repeatCount="indefinite"/>
   </rect>
 
   <!-- Corner brackets -->
   <g stroke="#FF006E" stroke-width="2" fill="none" opacity="0.85">
-    <path d="M 28 28 L 28 60 M 28 28 L 60 28"/>
-    <path d="M 1572 28 L 1572 60 M 1572 28 L 1540 28"/>
-    <path d="M 28 312 L 28 280 M 28 312 L 60 312"/>
-    <path d="M 1572 312 L 1572 280 M 1572 312 L 1540 312"/>
+    <path d="M 28 28 L 28 68 M 28 28 L 68 28"/>
+    <path d="M 1572 28 L 1572 68 M 1572 28 L 1532 28"/>
+    <path d="M 28 492 L 28 452 M 28 492 L 68 492"/>
+    <path d="M 1572 492 L 1572 452 M 1572 492 L 1532 492"/>
   </g>
 
-  <!-- Top strip -->
-  <g transform="translate(100, 60)">
+  <!-- Top HUD strip -->
+  <g transform="translate(100, 58)">
     <line x1="0" y1="0" x2="1400" y2="0" stroke="#1F2840" stroke-width="1"/>
     <line x1="0" y1="0" x2="160" y2="0" stroke="#FF006E" stroke-width="2"/>
-    <text y="-10" class="mono-bold" font-size="11" fill="#FF006E">[ /05 CONNECT.INITIATE ]</text>
-    <text x="1400" y="-10" class="mono" font-size="11" fill="#4A5578" text-anchor="end">OPEN.CHANNEL ⟡ 2026</text>
+    <text y="-10" class="mono-bold" font-size="11" fill="#FF006E">[ CONNECT.INITIATE ]</text>
+    <text x="200" y="-10" class="mono" font-size="11" fill="#4A5578">OPEN.CHANNEL ⟡ ENCRYPTED ⟡ HANDSHAKE.READY</text>
+    <circle cx="1340" cy="-14" r="4" fill="#B8FF00" filter="url(#glowCta)">
+      <animate attributeName="opacity" values="1;0.25;1" dur="1.2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="1355" y="-10" class="mono-bold" font-size="11" fill="#B8FF00">LIVE</text>
   </g>
 
-  <!-- Massive chromatic display -->
-  <g transform="translate(100, 200)">
-    <g>
-      <text x="4" class="display" font-size="130" fill="#FF006E" opacity="0.85">LET'S</text>
-      <text x="264" y="0" class="display" font-size="130" fill="#FF006E" opacity="0.85">CONNECT.</text>
+  <!-- LET'S (line 1) — no overlap, clean stacked -->
+  <g transform="translate(100, 230)">
+    <g opacity="0.85">
+      <text x="4" class="display" font-size="140" fill="#FF006E">LET'S</text>
     </g>
-    <g>
-      <text x="-4" class="display" font-size="130" fill="#00F0FF" opacity="0.85">LET'S</text>
-      <text x="256" y="0" class="display" font-size="130" fill="#00F0FF" opacity="0.85">CONNECT.</text>
+    <g opacity="0.85">
+      <text x="-4" class="display" font-size="140" fill="#00F0FF">LET'S</text>
     </g>
-    <text class="display" font-size="130" fill="#E4E8F7">LET'S</text>
-    <text x="260" y="0" class="display" font-size="130" fill="#E4E8F7">CONNECT.</text>
-    <!-- Blinking dot -->
-    <rect x="1285" y="-22" width="18" height="24" fill="#B8FF00" filter="url(#glowCta)">
+    <text class="display" font-size="140" fill="#E4E8F7">LET'S</text>
+    <!-- Thin horizontal rule after -->
+    <line x1="460" y1="-40" x2="900" y2="-40" stroke="#FF006E" stroke-width="1" opacity="0.6"/>
+    <text x="460" y="-48" class="mono-bold" font-size="11" fill="#FF006E">▸ REACH OUT</text>
+    <text x="460" y="-20" class="mono" font-size="11" fill="#4A5578">available for design × dev × fabrication</text>
+  </g>
+
+  <!-- CONNECT. (line 2) -->
+  <g transform="translate(100, 390)">
+    <g opacity="0.85">
+      <text x="4" class="display" font-size="140" fill="#FF006E">CONNECT.</text>
+    </g>
+    <g opacity="0.85">
+      <text x="-4" class="display" font-size="140" fill="#00F0FF">CONNECT.</text>
+    </g>
+    <text class="display" font-size="140" fill="#E4E8F7">CONNECT.</text>
+    <!-- Blinking cursor after -->
+    <rect x="760" y="-32" width="14" height="32" fill="#B8FF00" filter="url(#glowCta)">
       <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="0.9s" repeatCount="indefinite"/>
     </rect>
   </g>
 
   <!-- Right-side network node diagram -->
-  <g transform="translate(1340, 160)" opacity="0.9">
-    <circle cx="0" cy="0" r="16" fill="none" stroke="#00F0FF" stroke-width="1.5"/>
+  <g transform="translate(1370, 290)" opacity="0.95">
+    <circle cx="0" cy="0" r="14" fill="none" stroke="#00F0FF" stroke-width="1.5"/>
     <circle cx="0" cy="0" r="4" fill="#00F0FF" filter="url(#glowCta)"/>
-    <g stroke="#00F0FF" stroke-width="1" opacity="0.6">
-      <line x1="16" y1="0" x2="80" y2="-40"/>
-      <line x1="16" y1="0" x2="80" y2="40"/>
-      <line x1="-16" y1="0" x2="-80" y2="-40"/>
-      <line x1="-16" y1="0" x2="-80" y2="40"/>
-      <line x1="0" y1="-16" x2="0" y2="-80"/>
-      <line x1="0" y1="16" x2="0" y2="80"/>
+    <g>
+      <g stroke="#00F0FF" stroke-width="1" opacity="0.5">
+        <line x1="12" y1="0" x2="80" y2="-54"/>
+        <line x1="12" y1="0" x2="96" y2="0"/>
+        <line x1="12" y1="0" x2="80" y2="54"/>
+        <line x1="-12" y1="0" x2="-80" y2="-54"/>
+        <line x1="-12" y1="0" x2="-96" y2="0"/>
+        <line x1="-12" y1="0" x2="-80" y2="54"/>
+      </g>
+      <g fill="#FF006E">
+        <circle cx="80" cy="-54" r="3"/>
+        <circle cx="96" cy="0" r="3"/>
+        <circle cx="80" cy="54" r="3"/>
+        <circle cx="-80" cy="-54" r="3"/>
+        <circle cx="-96" cy="0" r="3"/>
+        <circle cx="-80" cy="54" r="3"/>
+      </g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="30s" repeatCount="indefinite"/>
     </g>
-    <g fill="#FF006E">
-      <circle cx="80" cy="-40" r="3"/>
-      <circle cx="80" cy="40" r="3"/>
-      <circle cx="-80" cy="-40" r="3"/>
-      <circle cx="-80" cy="40" r="3"/>
-      <circle cx="0" cy="-80" r="3"/>
-      <circle cx="0" cy="80" r="3"/>
-    </g>
-    <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="30s" repeatCount="indefinite" additive="sum"/>
+    <text x="0" y="130" class="mono-bold" font-size="9" fill="#4A5578" text-anchor="middle">NETWORK.READY</text>
   </g>
 
   <!-- Bottom meta strip -->
-  <g transform="translate(100, 292)">
+  <g transform="translate(100, 490)">
     <line x1="0" y1="0" x2="1400" y2="0" stroke="#1F2840" stroke-width="1"/>
     <line x1="0" y1="0" x2="160" y2="0" stroke="#00F0FF" stroke-width="2"/>
-    <text y="20" class="mono" font-size="10" fill="#4A5578">◢ RESPONSE_TIME  &lt; 48H ⟡ ENCRYPTED.CHANNEL ⟡ HANDSHAKE.READY</text>
+    <text y="20" class="mono" font-size="10" fill="#4A5578">◢ RESPONSE &lt; 48H ⟡ SIGNAL: STRONG ⟡ PROTOCOL: HUMAN</text>
     <text x="1400" y="20" class="mono-bold" font-size="10" fill="#00F0FF" text-anchor="end">emre.uiux@gmail.com</text>
   </g>
 </svg>
