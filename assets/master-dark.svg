@@ -170,7 +170,6 @@
 
     <!-- Divider + label -->
     <g transform="translate(100, 475)">
-      <line x1="0" y1="0" x2="1400" y2="0" stroke="#1F2840" stroke-width="1"/>
       <line x1="0" y1="0" x2="80" y2="0" stroke="#00F0FF" stroke-width="2"/>
       <text y="24" class="mono-bold" font-size="12" fill="#00F0FF">// TELEMETRY</text>
       <text x="118" y="24" class="mono" font-size="12" fill="#4A5578">— sys.output</text>
@@ -236,7 +235,6 @@
 
     <!-- Divider + label -->
     <g transform="translate(100, 715)">
-      <line x1="0" y1="0" x2="1400" y2="0" stroke="#1F2840" stroke-width="1"/>
       <line x1="0" y1="0" x2="80" y2="0" stroke="#FF006E" stroke-width="2"/>
       <text y="24" class="mono-bold" font-size="12" fill="#FF006E">// CONNECT.INITIATE</text>
       <text x="190" y="24" class="mono" font-size="12" fill="#4A5578">— open.channel · encrypted · handshake.ready</text>
@@ -270,9 +268,6 @@
         <text x="-4" class="display" font-size="130" fill="#00F0FF">CONNECT.</text>
       </g>
       <text class="display" font-size="130" fill="#E4E8F7">CONNECT.</text>
-      <rect x="712" y="-30" width="14" height="32" fill="#B8FF00" filter="url(#glow)">
-        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="0.9s" repeatCount="indefinite"/>
-      </rect>
     </g>
 
     <!-- ROTATING NETWORK NODE DIAGRAM -->
@@ -307,7 +302,6 @@
 
     <!-- Divider + label -->
     <g transform="translate(100, 1075)">
-      <line x1="0" y1="0" x2="1400" y2="0" stroke="#1F2840" stroke-width="1"/>
       <line x1="0" y1="0" x2="80" y2="0" stroke="#B8FF00" stroke-width="2"/>
       <text y="24" class="mono-bold" font-size="12" fill="#B8FF00">// CHANNELS</text>
       <text x="115" y="24" class="mono" font-size="12" fill="#4A5578">— endpoints.list (click buttons below)</text>
