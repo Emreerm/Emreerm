@@ -1,13 +1,13 @@
 <!--
-  EMRE ERIM — github profile · v05 (brutalist mono studio)
+  EMRE ERIM — github profile
   ──────────────────────────────────────────────────
-  designer + engineer · istanbul
+  Designer + Engineer · Konya
   one composition · monospace · pure black + chartreuse + bone
   no emojis · no badges · no shields · no humblebrag
 -->
 
 <p align="center">
-  <img src="assets/studio.svg" width="100%" alt="Emre Erim — designer and engineer based in Istanbul. Working at the intersection of interface, code and craft.">
+  <img src="assets/studio.svg" width="100%" alt="Emre Erim — designer and engineer based in Konya Working at the intersection of interface, code and craft.">
 </p>
 
 <p align="left">
@@ -24,7 +24,7 @@
 </pre>
 
 <p align="left">
-  <sub><code>// EOF · v05 · MMXXVI · ISTANBUL</code></sub>
+  <sub><code>// EOF · MMXXVI · Konya</code></sub>
 </p>
 
 <!--
