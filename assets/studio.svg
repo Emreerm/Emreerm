@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1100" role="img" aria-labelledby="t d">
-  <title id="t">Emre Erim — Studio</title>
-  <desc id="d">Designer and engineer based in Istanbul. Selected work and profile.</desc>
+  <title id="t">Emre Erim — Erim Studio</title>
+  <desc id="d">Designer and engineer based in Kınya. Selected work and profile.</desc>
 
   <defs>
     <style>
@@ -71,7 +71,6 @@
     <text x="50"  y="636" class="muted upper" font-size="11">STATUS</text>
     <g transform="translate(240 632)">
       <circle cx="6" cy="-4" r="4" fill="#C7F551"/>
-      <text x="20" y="0" class="ink">taking small projects · q3 2026</text>
     </g>
     <line x1="50" y1="654" x2="1150" y2="654" stroke="#1A1A1A" stroke-width="1"/>
 
