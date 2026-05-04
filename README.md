@@ -7,7 +7,7 @@
 -->
 
 <p align="center">
-  <img src="assets/studio.svg" width="100%" alt="Emre Erim — designer and engineer based in Konya Working at the intersection of interface, code and craft.">
+  <img src="assets/studio.svg" width="100%" alt="Emre Erim — designer and engineer based in Konya. Working at the intersection of interface, code and craft.">
 </p>
 
 <p align="left">
