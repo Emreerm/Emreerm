@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1100" role="img" aria-labelledby="t d">
+  <title id="t">Emre Erim — Studio</title>
+  <desc id="d">Designer and engineer based in Istanbul. Selected work and profile.</desc>
+
+  <defs>
+    <style>
+      .mono       { font-family: 'JetBrains Mono','SF Mono','IBM Plex Mono',Menlo,Consolas,'Courier New',monospace; }
+      .mb         { font-weight: 700; }
+      .ink        { fill: #FAFAFA; }
+      .muted      { fill: #6B6B6B; }
+      .accent     { fill: #C7F551; }
+      .upper      { letter-spacing: 0.18em; }
+      .wide       { letter-spacing: 0.04em; }
+    </style>
+    <pattern id="hairgrid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="60" y2="0" stroke="#1A1A1A" stroke-width="0.5" opacity="0.4"/>
+      <line x1="0" y1="0" x2="0" y2="60" stroke="#1A1A1A" stroke-width="0.5" opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <!-- background -->
+  <rect width="1200" height="1100" fill="#000000"/>
+  <rect width="1200" height="1100" fill="url(#hairgrid)"/>
+
+  <!-- ============ TOP HEADER BAR ============ -->
+  <line x1="0" y1="1" x2="1200" y2="1" stroke="#FAFAFA" stroke-width="1.5"/>
+  <line x1="0" y1="49" x2="1200" y2="49" stroke="#2A2A2A" stroke-width="1"/>
+
+  <text x="50" y="32" class="mono mb ink upper" font-size="13">EMRE.ERIM</text>
+  <line x1="160" y1="20" x2="160" y2="36" stroke="#2A2A2A" stroke-width="1"/>
+  <text x="180" y="32" class="mono muted upper" font-size="11">DESIGNER · CODER · FIGURE MAKER</text>
+
+  <circle cx="930" cy="26" r="4" fill="#C7F551">
+    <animate attributeName="opacity" values="1;0.35;1" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <text x="945" y="32" class="mono ink upper" font-size="11">AVAILABLE</text>
+  <line x1="1040" y1="20" x2="1040" y2="36" stroke="#2A2A2A" stroke-width="1"/>
+  <text x="1150" y="32" text-anchor="end" class="mono muted upper" font-size="11">ISTANBUL · MMXXVI</text>
+
+  <!-- index marker -->
+  <text x="50" y="92" class="mono muted upper" font-size="11">// PROFILE/04 · GH.README · v04</text>
+  <text x="1150" y="92" text-anchor="end" class="mono muted upper" font-size="11">SN 2026.05.04</text>
+
+  <!-- ============ BIG INTRO ============ -->
+  <g class="mono ink">
+    <text x="50" y="200" font-size="56" letter-spacing="-0.01em">Designer &amp; engineer</text>
+    <text x="50" y="270" font-size="56" letter-spacing="-0.01em">working at the</text>
+    <text x="50" y="340" font-size="56" letter-spacing="-0.01em">intersection of</text>
+    <text x="50" y="410" font-size="56" letter-spacing="-0.01em">interface, code <tspan class="accent">&amp; craft.</tspan></text>
+  </g>
+
+  <!-- ============ DIVIDER + INTRO META ============ -->
+  <line x1="50" y1="460" x2="1150" y2="460" stroke="#2A2A2A" stroke-width="1"/>
+  <text x="50" y="490" class="mono muted upper" font-size="10">— ABOUT</text>
+  <text x="1150" y="490" text-anchor="end" class="mono muted upper" font-size="10">04 ROWS</text>
+
+  <!-- ============ PROFILE BLOCK (4 ROWS) ============ -->
+  <g font-size="14" class="mono">
+    <!-- row 1: POSITION -->
+    <text x="50"  y="540" class="muted upper" font-size="11">POSITION</text>
+    <text x="240" y="540" class="ink">designer + engineer</text>
+    <line x1="50" y1="558" x2="1150" y2="558" stroke="#1A1A1A" stroke-width="1"/>
+
+    <!-- row 2: LOCATION -->
+    <text x="50"  y="588" class="muted upper" font-size="11">LOCATION</text>
+    <text x="240" y="588" class="ink">istanbul, turkey · GMT+3</text>
+    <line x1="50" y1="606" x2="1150" y2="606" stroke="#1A1A1A" stroke-width="1"/>
+
+    <!-- row 3: STATUS -->
+    <text x="50"  y="636" class="muted upper" font-size="11">STATUS</text>
+    <g transform="translate(240 632)">
+      <circle cx="6" cy="-4" r="4" fill="#C7F551"/>
+      <text x="20" y="0" class="ink">taking small projects · q3 2026</text>
+    </g>
+    <line x1="50" y1="654" x2="1150" y2="654" stroke="#1A1A1A" stroke-width="1"/>
+
+    <!-- row 4: NOW -->
+    <text x="50"  y="684" class="muted upper" font-size="11">NOW</text>
+    <text x="240" y="684" class="ink">client projects · evolving <tspan class="accent">eerim.dev v3</tspan></text>
+  </g>
+
+  <!-- ============ SELECTED WORK ============ -->
+  <line x1="50" y1="730" x2="1150" y2="730" stroke="#2A2A2A" stroke-width="1"/>
+  <g>
+    <text x="50" y="762" class="mono ink mb upper" font-size="13">— SELECTED WORK</text>
+    <text x="1150" y="762" text-anchor="end" class="mono muted upper" font-size="10">03 ENTRIES · ROLLING INDEX</text>
+  </g>
+
+  <!-- Project 01 -->
+  <g class="mono">
+    <text x="50"  y="820" class="muted" font-size="13">01</text>
+    <text x="110" y="820" class="ink mb" font-size="20" letter-spacing="0.02em">DENTAL CLINIC</text>
+    <text x="850" y="820" class="muted" font-size="13">health</text>
+    <text x="970" y="820" class="muted" font-size="13">2025</text>
+    <text x="1140" y="820" text-anchor="end" class="accent" font-size="20">↗</text>
+    <text x="110" y="844" class="muted" font-size="13">healthcare brand + web · identity · figma</text>
+    <line x1="50" y1="868" x2="1150" y2="868" stroke="#1A1A1A" stroke-width="1"/>
+  </g>
+
+  <!-- Project 02 -->
+  <g class="mono">
+    <text x="50"  y="900" class="muted" font-size="13">02</text>
+    <text x="110" y="900" class="ink mb" font-size="20" letter-spacing="0.02em">DORA BRAND</text>
+    <text x="850" y="900" class="muted" font-size="13">identity</text>
+    <text x="970" y="900" class="muted" font-size="13">2025</text>
+    <text x="1140" y="900" text-anchor="end" class="accent" font-size="20">↗</text>
+    <text x="110" y="924" class="muted" font-size="13">brand identity system · logo · type · system</text>
+    <line x1="50" y1="948" x2="1150" y2="948" stroke="#1A1A1A" stroke-width="1"/>
+  </g>
+
+  <!-- Project 03 -->
+  <g class="mono">
+    <text x="50"  y="980" class="muted" font-size="13">03</text>
+    <text x="110" y="980" class="ink mb" font-size="20" letter-spacing="0.02em">SALUTEM</text>
+    <text x="850" y="980" class="muted" font-size="13">mobile</text>
+    <text x="970" y="980" class="muted" font-size="13">2024</text>
+    <text x="1140" y="980" text-anchor="end" class="accent" font-size="20">↗</text>
+    <text x="110" y="1004" class="muted" font-size="13">mobile app interface · product · ios · figma</text>
+    <line x1="50" y1="1028" x2="1150" y2="1028" stroke="#1A1A1A" stroke-width="1"/>
+  </g>
+
+  <!-- ============ FOOTER LINE ============ -->
+  <text x="50"   y="1070" class="mono muted upper" font-size="10">// END OF FILE · ISTANBUL · MMXXVI</text>
+  <text x="1150" y="1070" text-anchor="end" class="mono muted upper" font-size="10">PRESS A KEY TO CONTINUE_</text>
+  <line x1="0" y1="1099" x2="1200" y2="1099" stroke="#FAFAFA" stroke-width="1.5"/>
+</svg>
