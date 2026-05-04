@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">EMRE ERIM — designer, coder, vinyl toy engineer</title>
+  <desc id="desc">Risograph pop art banner with vinyl toy mascot</desc>
+
+  <defs>
+    <!-- halftone dot pattern -->
+    <pattern id="halftone" x="0" y="0" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.2" fill="#FF3B30" opacity="0.5"/>
+    </pattern>
+    <pattern id="halftoneCyan" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.9" fill="#2EC4F1" opacity="0.18"/>
+    </pattern>
+    <!-- diagonal stripes -->
+    <pattern id="stripes" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+      <line x1="0" y1="0" x2="0" y2="22" stroke="#2EC4F1" stroke-width="1.4" opacity="0.10"/>
+    </pattern>
+    <!-- noise filter for grain -->
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4"/>
+      <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.18 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+    <!-- mascot shading clip -->
+    <clipPath id="bodyClip">
+      <rect x="820" y="170" width="180" height="190" rx="22"/>
+    </clipPath>
+    <clipPath id="headClip">
+      <circle cx="910" cy="135" r="62"/>
+    </clipPath>
+    <!-- font stacks -->
+    <style>
+      .display { font-family: 'Anton', 'Bebas Neue', 'Arial Narrow', Impact, 'Haettenschweiler', sans-serif; font-weight: 900; letter-spacing: -0.02em; }
+      .mono    { font-family: 'JetBrains Mono', 'IBM Plex Mono', 'SF Mono', Menlo, Consolas, monospace; }
+      .heavy   { font-family: -apple-system, 'Helvetica Neue', 'Arial Black', sans-serif; font-weight: 900; letter-spacing: 0.02em; }
+    </style>
+  </defs>
+
+  <!-- background -->
+  <rect width="1200" height="420" fill="#0D0D0D"/>
+  <rect width="1200" height="420" fill="url(#stripes)"/>
+  <rect width="1200" height="420" fill="url(#halftoneCyan)"/>
+
+  <!-- top-right vol badge -->
+  <g transform="translate(1020 30)">
+    <rect x="0" y="0" width="150" height="30" fill="#0D0D0D" stroke="#2EC4F1" stroke-width="1.5"/>
+    <text x="75" y="20" text-anchor="middle" class="mono" font-size="13" fill="#2EC4F1" letter-spacing="0.16em">VOL.04 / 2026</text>
+  </g>
+
+  <!-- decorative star top-left -->
+  <g transform="translate(60 50) rotate(-12)">
+    <path d="M0,-22 L6,-6 L22,-6 L9,4 L14,20 L0,11 L-14,20 L-9,4 L-22,-6 L-6,-6 Z" fill="#FF3B30"/>
+    <path d="M0,-22 L6,-6 L22,-6 L9,4 L14,20 L0,11 L-14,20 L-9,4 L-22,-6 L-6,-6 Z" fill="none" stroke="#0D0D0D" stroke-width="2.5" stroke-linejoin="round"/>
+  </g>
+
+  <!-- HERO TYPOGRAPHY: EMRE -->
+  <g transform="translate(60 175)">
+    <text x="6" y="6" class="display" font-size="156" fill="#0D0D0D">EMRE</text>
+    <text x="0" y="0" class="display" font-size="156" fill="#FF3B30" stroke="#0D0D0D" stroke-width="3">EMRE</text>
+  </g>
+  <!-- HERO TYPOGRAPHY: ERIM -->
+  <g transform="translate(60 295)">
+    <text x="6" y="6" class="display" font-size="156" fill="#0D0D0D">ERIM</text>
+    <text x="0" y="0" class="display" font-size="156" fill="#F5EDE0" stroke="#0D0D0D" stroke-width="3">ERIM</text>
+  </g>
+
+  <!-- subtitle pill -->
+  <g transform="translate(60 332)">
+    <rect x="0" y="0" width="430" height="34" fill="#2EC4F1" stroke="#0D0D0D" stroke-width="2.5"/>
+    <rect x="6" y="6" width="430" height="34" fill="none" stroke="#0D0D0D" stroke-width="0"/>
+    <text x="215" y="22" text-anchor="middle" class="heavy" font-size="13" fill="#0D0D0D" letter-spacing="0.22em">[ DESIGNER · CODER · TOY MAKER ]</text>
+  </g>
+
+  <!-- meta line under subtitle -->
+  <g transform="translate(60 388)">
+    <text x="0" y="0" class="mono" font-size="11" fill="#F5EDE0" letter-spacing="0.18em" opacity="0.7">PROFILE.README — RISO PRESS — ISTANBUL, TR</text>
+  </g>
+
+  <!-- ============ MASCOT ============ -->
+  <g transform="translate(0 0)">
+    <!-- shadow stack first -->
+    <g transform="translate(6 6)">
+      <rect x="820" y="170" width="180" height="190" rx="22" fill="#0D0D0D"/>
+      <circle cx="910" cy="135" r="62" fill="#0D0D0D"/>
+      <rect x="884" y="80" width="3" height="22" fill="#0D0D0D"/>
+      <rect x="933" y="80" width="3" height="22" fill="#0D0D0D"/>
+      <circle cx="885.5" cy="76" r="6" fill="#0D0D0D"/>
+      <circle cx="934.5" cy="76" r="6" fill="#0D0D0D"/>
+      <rect x="840" y="362" width="40" height="20" rx="4" fill="#0D0D0D"/>
+      <rect x="940" y="362" width="40" height="20" rx="4" fill="#0D0D0D"/>
+    </g>
+
+    <!-- antennae -->
+    <rect x="884" y="80" width="3" height="22" fill="#F5EDE0" stroke="#0D0D0D" stroke-width="1.5"/>
+    <rect x="933" y="80" width="3" height="22" fill="#F5EDE0" stroke="#0D0D0D" stroke-width="1.5"/>
+    <circle cx="885.5" cy="76" r="6" fill="#FF3B30" stroke="#0D0D0D" stroke-width="2"/>
+    <circle cx="934.5" cy="76" r="6" fill="#2EC4F1" stroke="#0D0D0D" stroke-width="2"/>
+
+    <!-- body -->
+    <rect x="820" y="170" width="180" height="190" rx="22" fill="#F5EDE0" stroke="#0D0D0D" stroke-width="3"/>
+    <!-- body halftone shading -->
+    <rect x="820" y="170" width="180" height="190" rx="22" fill="url(#halftone)" clip-path="url(#bodyClip)" opacity="0.6"/>
+
+    <!-- chest plate with </> -->
+    <g transform="translate(854 224)">
+      <rect x="0" y="0" width="112" height="58" fill="#FF3B30" stroke="#0D0D0D" stroke-width="2.5"/>
+      <text x="56" y="40" text-anchor="middle" class="display" font-size="32" fill="#F5EDE0">&lt;/&gt;</text>
+    </g>
+
+    <!-- belt strip -->
+    <rect x="820" y="312" width="180" height="14" fill="#2EC4F1" stroke="#0D0D0D" stroke-width="2"/>
+    <text x="910" y="323" text-anchor="middle" class="mono" font-size="9" fill="#0D0D0D" letter-spacing="0.25em">SYS.EMRE.ERIM</text>
+
+    <!-- legs/feet -->
+    <rect x="840" y="362" width="40" height="20" rx="4" fill="#0D0D0D"/>
+    <rect x="940" y="362" width="40" height="20" rx="4" fill="#0D0D0D"/>
+    <rect x="840" y="378" width="40" height="6" rx="2" fill="#FF3B30"/>
+    <rect x="940" y="378" width="40" height="6" rx="2" fill="#FF3B30"/>
+
+    <!-- head -->
+    <circle cx="910" cy="135" r="62" fill="#F5EDE0" stroke="#0D0D0D" stroke-width="3"/>
+    <circle cx="910" cy="135" r="62" fill="url(#halftone)" clip-path="url(#headClip)" opacity="0.55"/>
+
+    <!-- eyes -->
+    <circle cx="888" cy="128" r="11" fill="#0D0D0D"/>
+    <circle cx="932" cy="128" r="11" fill="#0D0D0D"/>
+    <circle cx="891" cy="124" r="3.5" fill="#F5EDE0"/>
+    <circle cx="935" cy="124" r="3.5" fill="#F5EDE0"/>
+
+    <!-- mouth: smirk -->
+    <path d="M893 156 Q910 168 927 156" fill="none" stroke="#0D0D0D" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- cheek dots -->
+    <circle cx="876" cy="148" r="4" fill="#FF3B30" opacity="0.55"/>
+    <circle cx="944" cy="148" r="4" fill="#FF3B30" opacity="0.55"/>
+  </g>
+
+  <!-- decorative sparkles around mascot -->
+  <g class="display" font-size="20" fill="#2EC4F1">
+    <text x="780" y="120">✦</text>
+    <text x="1018" y="190">✦</text>
+    <text x="800" y="370">✦</text>
+  </g>
+
+  <!-- bottom-right serial -->
+  <text x="1170" y="403" text-anchor="end" class="mono" font-size="10" fill="#F5EDE0" opacity="0.45" letter-spacing="0.2em">SN · 2026.05.04 · ED.04</text>
+
+  <!-- corner crops -->
+  <g stroke="#FF3B30" stroke-width="2" fill="none">
+    <path d="M10 10 L10 32 M10 10 L32 10"/>
+    <path d="M1190 10 L1190 32 M1190 10 L1168 10"/>
+    <path d="M10 410 L10 388 M10 410 L32 410"/>
+    <path d="M1190 410 L1190 388 M1190 410 L1168 410"/>
+  </g>
+
+  <!-- grain overlay -->
+  <rect width="1200" height="420" fill="#F5EDE0" filter="url(#grain)" opacity="0.07"/>
+</svg>
