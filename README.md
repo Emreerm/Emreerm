@@ -18,7 +18,7 @@
 → SITE         <a href="https://eerim.dev">eerim.dev</a>
 → BEHANCE      <a href="https://www.behance.net/emreerim">behance.net/emreerim</a>
 → LINKEDIN     <a href="https://linkedin.com/in/emreeerm">linkedin.com/in/emreeerm</a>
-→ TWITTER      <a href="https://twitter.com/emreeerm">twitter.com/emreeerm</a>
+→ X            <a href="https://x.com/emreeerm">x.com/emreeerm</a>
 → INSTAGRAM    <a href="https://instagram.com/emreeerm">instagram.com/emreeerm</a>
 → MAIL         <a href="mailto:emre.uiux@gmail.com">emre.uiux@gmail.com</a>
 </pre>
