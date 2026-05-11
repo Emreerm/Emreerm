@@ -29,7 +29,7 @@
 
 <div align="center">
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=KULLANICI_ADIN&theme=tokyonight&hide_border=true)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Emreerm&theme=tokyonight&hide_border=true)
 
 </div>
 
