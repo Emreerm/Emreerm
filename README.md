@@ -27,6 +27,12 @@
   <sub><code>// EOF · MMXXVI · Konya</code></sub>
 </p>
 
+<div align="center">
+
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=KULLANICI_ADIN&theme=tokyonight&hide_border=true)
+
+</div>
+
 <!--
   colophon
   ──────────────────────────────────────────────────
