@@ -15,7 +15,7 @@
 </p>
 
 <pre>
-→ SITE         <a href="https://eerim.dev">eerim.dev</a>
+→ SITE         <a href="https://erim.digital">erim.digital</a>
 → BEHANCE      <a href="https://www.behance.net/emreerim">behance.net/emreerim</a>
 → LINKEDIN     <a href="https://linkedin.com/in/emreeerm">linkedin.com/in/emreeerm</a>
 → X            <a href="https://x.com/emreeerm">x.com/emreeerm</a>
