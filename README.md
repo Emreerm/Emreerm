@@ -1,52 +1,54 @@
 <!--
-  EMRE ERIM — github profile
+  EMRE ERIM — github profile · v07 bento
   ──────────────────────────────────────────────────
   Designer + Engineer · Konya
-  one composition · monospace · pure black + chartreuse + bone
-  no emojis · no badges · no shields · no humblebrag
+  bento grid · light + dark aware · chartreuse #C7F551
+  no emojis · no badges · no shields
 -->
 
-<p align="center">
-  <img src="assets/ascii-boot.svg" width="100%" alt="EMRE ERIM set in block letters above a terminal boot log: init erim.studio ok, mount interface code craft ok, resolve konya mmxxvi ok, spawn designer + engineer ready.">
-</p>
-
-<p align="left">
-  <code>// ELSEWHERE</code>
-</p>
-
-<pre>
-────────────────────────────────────────────
-  › SITE        <a href="https://erim.digital">erim.digital</a>
-  › BEHANCE     <a href="https://www.behance.net/emreerim">behance.net/emreerim</a>
-  › LINKEDIN    <a href="https://linkedin.com/in/emreeerm">linkedin.com/in/emreeerm</a>
-  › X           <a href="https://x.com/emreeerm">x.com/emreeerm</a>
-  › INSTAGRAM   <a href="https://instagram.com/emreeerm">instagram.com/emreeerm</a>
-  › MAIL        <a href="mailto:emre.uiux@gmail.com">emre.uiux@gmail.com</a>
-────────────────────────────────────────────
-</pre>
-
-<p align="left">
-  <code>// ACTIVITY</code>
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/bento-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/bento-light.svg">
+  <img src="assets/bento-dark.svg" width="100%" alt="Emre Erim — designer and engineer. Interfaces with intent, from first sketch to shipped code. Available for new projects. Based in Konya, Turkey. Design, engineering, craft. erim.digital">
+</picture>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=Emreerm&hide_border=true&background=000000&stroke=2A2A2A&ring=C7F551&fire=C7F551&currStreakNum=FAFAFA&sideNums=FAFAFA&currStreakLabel=C7F551&sideLabels=6B6B6B&dates=6B6B6B&excludeDaysLabel=6B6B6B" alt="GitHub contribution streak for Emreerm.">
+  <a href="https://erim.digital"><b>erim.digital</b></a>
+  &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="https://www.behance.net/emreerim">Behance</a>
+  &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="https://linkedin.com/in/emreeerm">LinkedIn</a>
+  &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="https://x.com/emreeerm">X</a>
+  &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="https://instagram.com/emreeerm">Instagram</a>
+  &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="mailto:emre.uiux@gmail.com">Mail</a>
 </p>
 
-<p align="left">
-  <sub><code>// EOF · MMXXVI · Konya</code></sub>
+<br>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=Emreerm&hide_border=true&border_radius=22&background=0F1114&stroke=23262B&ring=C7F551&fire=C7F551&currStreakNum=F5F5F2&sideNums=F5F5F2&currStreakLabel=C7F551&sideLabels=8B9099&dates=8B9099&excludeDaysLabel=8B9099">
+    <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com/?user=Emreerm&hide_border=false&border=E4E4DF&border_radius=22&background=FFFFFF&stroke=E4E4DF&ring=8DB21A&fire=8DB21A&currStreakNum=0B0B0C&sideNums=0B0B0C&currStreakLabel=0B0B0C&sideLabels=62666D&dates=62666D&excludeDaysLabel=62666D">
+    <img src="https://streak-stats.demolab.com/?user=Emreerm&hide_border=true&border_radius=22&background=0F1114&stroke=23262B&ring=C7F551&fire=C7F551&currStreakNum=F5F5F2&sideNums=F5F5F2&currStreakLabel=C7F551&sideLabels=8B9099&dates=8B9099&excludeDaysLabel=8B9099" alt="GitHub contribution streak for Emreerm.">
+  </picture>
+</p>
+
+<p align="center">
+  <sub>MMXXVI · Konya · designed &amp; built by hand</sub>
 </p>
 
 <!--
   colophon
   ──────────────────────────────────────────────────
-  set in JetBrains Mono · pure black bg · chartreuse #C7F551 · bone #FAFAFA
-  hero wordmark drawn as 365 <rect> on a 71 × 9 cell grid — geometry, not
-  glyphs, so the blocks never reflow on a reader's font stack. staggered
-  column reveal settles in 1.3s, reduced-motion aware.
-  links use horizontal rules only: vertical box-drawing breaks in <pre>,
-  where line-height 1.45 stops │ from meeting the row below.
-  streak card re-skinned to palette via query params (font is hardcoded
-  upstream to Segoe UI and cannot be overridden).
-  v01 banner · v02 hud · v03 system · v04 riso press · v05 studio · v06 ascii boot
+  two SVGs (assets/bento-dark.svg, assets/bento-light.svg) swapped via <picture>
+  + prefers-color-scheme, so the card matches the reader's GitHub theme.
+  cards float on GitHub's own background (no outer fill). system sans stack
+  (Inter → SF → Segoe) because SVG-in-<img> can't load web fonts; the accent
+  period is a <tspan> so it tracks the name on any fallback font.
+  staggered rise-in ~0.9s, pulsing status dot, orbiting location marker —
+  all disabled under prefers-reduced-motion.
+  v01 banner · v02 hud · v03 system · v04 riso press · v05 studio · v06 ascii boot · v07 bento
 -->
