@@ -13,17 +13,53 @@
 </picture>
 
 <p align="center">
-  <a href="https://erim.digital"><b>erim.digital</b></a>
-  &nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="https://www.behance.net/emreerim">Behance</a>
-  &nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="https://linkedin.com/in/emreeerm">LinkedIn</a>
-  &nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="https://x.com/emreeerm">X</a>
-  &nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="https://instagram.com/emreeerm">Instagram</a>
-  &nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="mailto:emre.uiux@gmail.com">Mail</a>
+  <a href="https://erim.digital">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/social/site-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="assets/social/site-light.svg">
+      <img src="assets/social/site-dark.svg" height="36" alt="erim.digital">
+    </picture>
+  </a>
+  &nbsp;
+  <a href="https://www.behance.net/emreerim">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/social/behance-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="assets/social/behance-light.svg">
+      <img src="assets/social/behance-dark.svg" height="36" alt="Behance">
+    </picture>
+  </a>
+  &nbsp;
+  <a href="https://linkedin.com/in/emreeerm">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/social/linkedin-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="assets/social/linkedin-light.svg">
+      <img src="assets/social/linkedin-dark.svg" height="36" alt="LinkedIn">
+    </picture>
+  </a>
+  &nbsp;
+  <a href="https://x.com/emreeerm">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/social/x-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="assets/social/x-light.svg">
+      <img src="assets/social/x-dark.svg" height="36" alt="X">
+    </picture>
+  </a>
+  &nbsp;
+  <a href="https://instagram.com/emreeerm">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/social/instagram-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="assets/social/instagram-light.svg">
+      <img src="assets/social/instagram-dark.svg" height="36" alt="Instagram">
+    </picture>
+  </a>
+  &nbsp;
+  <a href="mailto:emre.uiux@gmail.com">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/social/mail-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="assets/social/mail-light.svg">
+      <img src="assets/social/mail-dark.svg" height="36" alt="Mail">
+    </picture>
+  </a>
 </p>
 
 <br>
@@ -50,5 +86,7 @@
   period is a <tspan> so it tracks the name on any fallback font.
   staggered rise-in ~0.9s, pulsing status dot, orbiting location marker —
   all disabled under prefers-reduced-motion.
+  social navigation built as theme-aware vector chips with optical kerning
+  and chartreuse signature CTA.
   v01 banner · v02 hud · v03 system · v04 riso press · v05 studio · v06 ascii boot · v07 bento
 -->

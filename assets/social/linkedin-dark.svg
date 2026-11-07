@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="36" viewBox="0 0 96 36" role="img" aria-label="LinkedIn">
+  <defs>
+    <style>
+      .sans {
+        font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: -0.2px;
+      }
+      .chip {
+        transition: all .15s ease;
+      }
+      svg:hover .chip {
+        fill: #181C23;
+        stroke: #C7F551;
+      }
+      svg:hover .txt {
+        fill: #C7F551;
+      }
+    </style>
+  </defs>
+  <rect class="chip" x="0.5" y="0.5" width="95" height="35" rx="10" fill="#0F1114" stroke="#2A2E35" stroke-width="1"/>
+  <g transform="translate(10, 7.8) scale(0.85)" class="icon">
+    <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43c-1.14 0-2.06-.92-2.06-2.06 0-1.14.92-2.06 2.06-2.06 1.14 0 2.06.92 2.06 2.06 0 1.14-.92 2.06-2.06 2.06zM7.12 20.45H3.56V9h3.56v11.45z" fill="#8B9099"/>
+  </g>
+  <text x="33" y="22.5" class="sans txt" fill="#F5F5F2">LinkedIn</text>
+</svg>
