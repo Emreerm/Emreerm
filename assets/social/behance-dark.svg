@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="102" height="36" viewBox="0 0 102 36" role="img" aria-label="Behance">
+<svg xmlns="http://www.w3.org/2000/svg" width="104" height="36" viewBox="0 0 104 36" role="img" aria-label="Behance">
   <defs>
     <style>
       .sans {
@@ -7,21 +7,15 @@
         font-weight: 500;
         letter-spacing: -0.2px;
       }
-      .chip {
-        transition: all .15s ease;
-      }
-      svg:hover .chip {
-        fill: #181C23;
-        stroke: #C7F551;
-      }
-      svg:hover .txt {
-        fill: #C7F551;
-      }
+      .chip { transition: all .15s ease; }
+      svg:hover .chip { fill: #181C23; stroke: #C7F551; }
+      svg:hover .txt { fill: #C7F551; }
     </style>
   </defs>
-  <rect class="chip" x="0.5" y="0.5" width="101" height="35" rx="10" fill="#0F1114" stroke="#2A2E35" stroke-width="1"/>
-  <g transform="translate(12, 10.2) scale(0.68)" class="icon">
+  <rect class="chip" x="0.5" y="0.5" width="103" height="35" rx="10" fill="#0F1114" stroke="#23262B" stroke-width="1"/>
+  <g transform="translate(12, 11) scale(0.68)" class="icon">
     <path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.171 3-3.455 0-5.555-2.477-5.555-5.554 0-3.327 2.277-5.446 5.518-5.446 3.528 0 5.171 2.399 5.171 5.446 0 .394-.047.781-.047.781h-7.643c.068 1.487 1.056 2.339 2.569 2.339 1.131 0 1.94-.482 2.396-1.566h2.762zm-7.671-3.418h4.745c-.068-1.229-.861-1.996-2.316-1.996-1.42 0-2.361.767-2.429 1.996zm-9.055 6.418H0V6h7.381c2.833 0 4.619 1.42 4.619 3.738 0 1.297-.68 2.418-1.787 2.977 1.488.582 2.195 1.932 2.195 3.547 0 2.459-1.957 3.738-5.408 3.738zm-4.367-8.625h2.385c1.199 0 2.016-.482 2.016-1.539 0-1.078-.817-1.539-2.016-1.539H2.633v3.078zm0 6.328h2.613c1.373 0 2.293-.582 2.293-1.758 0-1.229-.92-1.758-2.293-1.758H2.633v3.516z" fill="#8B9099"/>
   </g>
-  <text x="36" y="22.5" class="sans txt" fill="#F5F5F2">Behance</text>
+  
+  <text x="34" y="22.5" class="sans txt" fill="#F5F5F2">Behance</text>
 </svg>

@@ -5,61 +5,61 @@ BADGES = [
         "id": "site",
         "label": "erim.digital",
         "has_arrow": True,
-        "is_accent": True,
-        "width": 136,
+        "is_site": True,
+        "width": 142,
         "icon_type": "globe",
-        "icon_trans": "translate(11, 8.5) scale(0.79)",
-        "text_x": 33,
-        "arrow_x": 115
+        "icon_trans_dark": "translate(12, 9.5) scale(0.79)",
+        "arrow_x": 122,
+        "text_x": 44
     },
     {
         "id": "behance",
         "label": "Behance",
         "has_arrow": False,
-        "is_accent": False,
-        "width": 102,
+        "is_site": False,
+        "width": 104,
         "icon_type": "behance",
-        "icon_trans": "translate(12, 10.2) scale(0.68)",
-        "text_x": 36
+        "icon_trans_dark": "translate(12, 11) scale(0.68)",
+        "text_x": 34
     },
     {
         "id": "linkedin",
         "label": "LinkedIn",
         "has_arrow": False,
-        "is_accent": False,
-        "width": 96,
+        "is_site": False,
+        "width": 98,
         "icon_type": "linkedin",
-        "icon_trans": "translate(10, 7.8) scale(0.85)",
+        "icon_trans_dark": "translate(11, 8.8) scale(0.85)",
         "text_x": 33
     },
     {
         "id": "x",
         "label": "X",
         "has_arrow": False,
-        "is_accent": False,
-        "width": 58,
+        "is_site": False,
+        "width": 60,
         "icon_type": "x",
-        "icon_trans": "translate(12, 9.4) scale(0.72)",
+        "icon_trans_dark": "translate(12, 10.4) scale(0.72)",
         "text_x": 34
     },
     {
         "id": "instagram",
         "label": "Instagram",
         "has_arrow": False,
-        "is_accent": False,
-        "width": 108,
+        "is_site": False,
+        "width": 110,
         "icon_type": "instagram",
-        "icon_trans": "translate(13, 10.5) scale(0.625)",
+        "icon_trans_dark": "translate(13, 11.5) scale(0.625)",
         "text_x": 36
     },
     {
         "id": "mail",
         "label": "Mail",
         "has_arrow": False,
-        "is_accent": False,
-        "width": 74,
+        "is_site": False,
+        "width": 76,
         "icon_type": "mail",
-        "icon_trans": "translate(11, 7.5) scale(0.88)",
+        "icon_trans_dark": "translate(11, 8.5) scale(0.88)",
         "text_x": 35
     }
 ]
@@ -84,92 +84,76 @@ def get_icon(icon_type, color):
           <path d="m21.5 6.5-8.4 5.8a2 2 0 0 1-2.2 0L2.5 6.5"/>
         </g>'''
 
-ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUTPUT_DIR = os.path.join(ROOT_DIR, 'assets', 'social')
-os.makedirs(OUTPUT_DIR, exist_ok=True)
+ROOT = os.path.dirname(os.path.abspath(__file__))
+REPO = os.path.join(ROOT, 'Emreerm')
+OUT = os.path.join(REPO, 'assets', 'social')
+os.makedirs(OUT, exist_ok=True)
 
-for theme in ['dark', 'light']:
-    for b in BADGES:
-        w = b["width"]
-        h = 36
-        rx = 10
-        is_accent = b["is_accent"]
-        text_x = b["text_x"]
-        
+for b in BADGES:
+    w = b["width"]
+    h = 36
+    rx = 10
+    is_site = b["is_site"]
+
+    for theme in ['dark', 'light']:
         if theme == 'dark':
-            if is_accent:
-                bg = "#C7F551"
-                stroke = "#C7F551"
-                text_color = "#0B0B0C"
-                icon_color = "#0B0B0C"
-                font_weight = "650"
-                hover_bg = "#D6FA75"
-                hover_stroke = "#D6FA75"
-            else:
-                bg = "#0F1114"
-                stroke = "#2A2E35"
-                text_color = "#F5F5F2"
-                icon_color = "#8B9099"
-                font_weight = "500"
-                hover_bg = "#181C23"
-                hover_stroke = "#C7F551"
-        else: # light
-            if is_accent:
-                bg = "#C7F551"
-                stroke = "#C7F551"
-                text_color = "#0B0B0C"
-                icon_color = "#0B0B0C"
-                font_weight = "650"
-                hover_bg = "#D6FA75"
-                hover_stroke = "#D6FA75"
-            else:
-                bg = "#FFFFFF"
-                stroke = "#D8D8D2"
-                text_color = "#0B0B0C"
-                icon_color = "#62666D"
-                font_weight = "500"
-                hover_bg = "#F5F5F2"
-                hover_stroke = "#8DB21A"
+            bg = "#0F1114"
+            stroke = "#C7F551" if is_site else "#23262B"
+            text_color = "#F5F5F2"
+            icon_color = "#C7F551" if is_site else "#8B9099"
+            hover_bg = "#181C23"
+            hover_stroke = "#C7F551"
+            hover_text = "#C7F551"
+        else:
+            bg = "#FFFFFF"
+            stroke = "#8DB21A" if is_site else "#D8D8D2"
+            text_color = "#0B0B0C"
+            icon_color = "#8DB21A" if is_site else "#62666D"
+            hover_bg = "#F5F5F2"
+            hover_stroke = "#8DB21A"
+            hover_text = "#8DB21A"
 
         arrow_markup = ""
         if b["has_arrow"]:
             arrow_x = b["arrow_x"]
+            arrow_color = "#C7F551" if theme == 'dark' else "#8DB21A"
             arrow_markup = f'''
   <g transform="translate({arrow_x}, 13.5)">
-    <path d="M2.5 1h5.5v5.5M8 1L1 8" fill="none" stroke="{text_color}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="arrow"/>
+    <path d="M2.5 1h5.5v5.5M8 1L1 8" fill="none" stroke="{arrow_color}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
   </g>'''
 
-        icon_code = get_icon(b["icon_type"], icon_color)
+        dot_markup = ""
+        if is_site:
+            dot_color = "#C7F551" if theme == 'dark' else "#8DB21A"
+            dot_markup = f'<circle cx="34" cy="18" r="3" fill="{dot_color}"/>'
 
-        svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{b['label']}">
+        icon_code = get_icon(b["icon_type"], icon_color)
+        text_x = b["text_x"]
+
+        svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{b['label']}">
   <defs>
     <style>
       .sans {{
         font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
         font-size: 13px;
-        font-weight: {font_weight};
+        font-weight: 500;
         letter-spacing: -0.2px;
       }}
-      .chip {{
-        transition: all .15s ease;
-      }}
-      svg:hover .chip {{
-        fill: {hover_bg};
-        stroke: {hover_stroke};
-      }}
-      svg:hover .txt {{
-        fill: {text_color if is_accent else ('#C7F551' if theme == 'dark' else '#8DB21A')};
-      }}
+      .chip {{ transition: all .15s ease; }}
+      svg:hover .chip {{ fill: {hover_bg}; stroke: {hover_stroke}; }}
+      svg:hover .txt {{ fill: {hover_text}; }}
     </style>
   </defs>
-  <rect class="chip" x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="{rx}" fill="{bg}" stroke="{stroke}" stroke-width="1"/>
-  <g transform="{b['icon_trans']}" class="icon">
+  <rect class="chip" x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="{rx}" fill="{bg}" stroke="{stroke}" stroke-width="{1.5 if is_site else 1}"/>
+  <g transform="{b['icon_trans_dark']}" class="icon">
     {icon_code}
   </g>
+  {dot_markup}
   <text x="{text_x}" y="22.5" class="sans txt" fill="{text_color}">{b['label']}</text>{arrow_markup}
 </svg>'''
 
-        filepath = os.path.join(OUTPUT_DIR, f"{b['id']}-{theme}.svg")
-        with open(filepath, "w") as f:
-            f.write(svg_content)
-print("Regenerated badges.")
+        path = os.path.join(OUT, f"{b['id']}-{theme}.svg")
+        with open(path, "w") as f:
+            f.write(svg)
+
+print("All 12 accent-border badges generated.")
